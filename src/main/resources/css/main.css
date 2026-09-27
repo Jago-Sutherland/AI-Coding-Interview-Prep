@@ -5,15 +5,18 @@
 .root {
     /* tokens — declare once, inherited by every descendant */
     -color-bg:      #f5ead8;
+    -color-bg-light:  #eee0c9;
+    -color-bg-white: #ffffff;
     -color-surface: #ebddc5;
-    -color-text:    #201e1d;
+    -color-text-black:    #201e1d;
+    -color-text-grey:  #332f2b;
     -color-accent:  #c67139;
     -color-divider: rgba(32, 30, 29, 0.16);   /* the color-mix line, precomputed */
 
     /* applied */
     -fx-background-color: linear-gradient(to bottom right,
-    #f5ead8 0%, #f5ead8 58%, #eee0c9 58%, #eee0c9 100%);
-    -fx-text-fill: -color-text;
+    -color-bg 0%, -color-bg 58%, -color-bg-light 58%, -color-bg-light 100%);
+    -fx-text-fill: -color-text-black;
     -fx-font-family: "Figtree", "Segoe UI", sans-serif;
     -fx-font-size: 16px;
 }
@@ -21,13 +24,13 @@
 /* ---------- Labels ---------- */
 
 .label {
-    -fx-text-fill: #332f2b;
+    -fx-text-fill: -color-text-grey;
 }
 
 .title-label {
     -fx-font-size: 30px;
     -fx-font-weight: bold;
-    -fx-text-fill: #292522;
+    -fx-text-fill: -color-text-black;
 }
 
 .error-label {
@@ -37,16 +40,16 @@
 .section-label {
     -fx-font-size: 20px;
     -fx-font-weight: bold;
-    -fx-text-fill: #292522;
+    -fx-text-fill: -color-text-black;
 }
 
 
 /* ---------- Text Areas ---------- */
 
 .text-area {
-    -fx-background-color: #fffdf9;
-    -fx-control-inner-background: #fffdf9;
-    -fx-text-fill: #332f2b;
+    -fx-background-color: -color-bg-light;
+    -fx-control-inner-background: -color-bg-light;
+    -fx-text-fill: -color-text-grey;
 
     -fx-border-color: #ded6cc;
     -fx-border-width: 1px;
@@ -63,7 +66,7 @@
 
 
 .text-area .content {
-    -fx-background-color: #fffdf9;
+    -fx-background-color: -color-bg-white;
 }
 
 /* ---------- Code editor (VS Code dark theme look) ---------- */
@@ -142,8 +145,8 @@
 /* ---------- Text Fields ---------- */
 
 .text-field {
-    -fx-background-color: #fffdf9;
-    -fx-text-fill: #332f2b;
+    -fx-background-color:   -color-bg-light;
+    -fx-text-fill: -color-text-grey;
 
     -fx-border-color: #ded6cc;
     -fx-border-width: 1px;
@@ -160,7 +163,7 @@
 /* ---------- Auth form ---------- */
 
 .auth-card {
-    -fx-background-color: #fffdf9;
+    -fx-background-color: -color-bg-white;
     -fx-background-radius: 18px;
     -fx-border-color: #ded6cc;
     -fx-border-width: 1px;
@@ -204,7 +207,7 @@
 /* ---------- Buttons ---------- */
 
 .button {
-    -fx-text-fill: #fdf7f0;
+    -fx-text-fill: -color-text-grey;
     -fx-background-color: #b2622d;
     -fx-background-radius: 10px;
     -fx-background-insets: 2px;
@@ -274,7 +277,7 @@
     -fx-padding: 0 16px 0 8px;
 }
 .combo-box > .arrow-button > .arrow {
-    -fx-background-color: #fdf7f0;
+    -fx-background-color: -color-bg-white;
     -fx-padding: 3px 5px;
 }
 
@@ -290,7 +293,7 @@
 /* ---------- Dropdown popup ---------- */
 
 .combo-box-popup > .list-view {
-    -fx-background-color: #b2622d, #fdf8ee;
+    -fx-background-color: #b2622d, -color-bg-white;
     -fx-background-insets: 0, 2;
     -fx-background-radius: 10, 8;
     -fx-padding: 3px;
