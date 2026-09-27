@@ -10,6 +10,7 @@
     -color-surface: #ebddc5;
     -color-text-black:    #201e1d;
     -color-text-grey:  #332f2b;
+    -color-text-white:  #fdf7f0;
     -color-accent:  #c67139;
     -color-divider: rgba(32, 30, 29, 0.16);   /* the color-mix line, precomputed */
 
@@ -207,7 +208,7 @@
 /* ---------- Buttons ---------- */
 
 .button {
-    -fx-text-fill: -color-text-grey;
+    -fx-text-fill: -color-text-white;
     -fx-background-color: #b2622d;
     -fx-background-radius: 10px;
     -fx-background-insets: 2px;
@@ -236,7 +237,7 @@
 
 .button.recording {
     -fx-background-color: #d9564a;
-    -fx-text-fill: #fff8f5;
+    -fx-text-fill: -color-text-white;
     -fx-border-color: #7a231b;
 }
 
@@ -267,7 +268,7 @@
 
 .combo-box > .list-cell {
     -fx-background-color: transparent;
-    -fx-text-fill: #fdf7f0;
+    -fx-text-fill: -color-text-white;
     -fx-font-weight: bold;
     -fx-padding: 10px 4px 10px 20px;
 }
@@ -302,7 +303,7 @@
 
 .combo-box-popup .list-cell {
     -fx-background-color: transparent;
-    -fx-text-fill: #332f2b;
+    -fx-text-fill: -color-text-grey;
     -fx-padding: 9px 18px;
     -fx-background-radius: 6;
 }
@@ -311,7 +312,7 @@
 }
 .combo-box-popup .list-cell:filled:selected {
     -fx-background-color: #b2622d;
-    -fx-text-fill: #fdf7f0;
+    -fx-text-fill: -color-text-white;
 }
 
 /* ---------- Progress Bars ---------- */
