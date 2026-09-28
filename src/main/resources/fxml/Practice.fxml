@@ -37,7 +37,7 @@
                <ComboBox fx:id="comboQuestionType" prefWidth="260" promptText="Question type" />
             </children>
          </HBox>
-         <TextArea fx:id="questionOutput" editable="false" prefHeight="634.0" prefRowCount="8" prefWidth="400.0" promptText="Generate a question to begin." styleClass="question-label" wrapText="true" VBox.vgrow="ALWAYS" />
+         <TextArea fx:id="questionOutput" mouseTransparent="true" editable="false" prefHeight="634.0" prefRowCount="8" prefWidth="400.0" promptText="Generate a question to begin." styleClass="question-label" wrapText="true" VBox.vgrow="ALWAYS" />
       </VBox>
    </left>
 
