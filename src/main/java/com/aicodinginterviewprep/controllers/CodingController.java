@@ -80,7 +80,7 @@ public class CodingController implements SceneAware {
         codePlaceholder.getStyleClass().add("code-editor-placeholder");
         codePlaceholder.setMouseTransparent(true);
         StackPane.setAlignment(codePlaceholder, Pos.TOP_LEFT);
-        StackPane.setMargin(codePlaceholder, new Insets(0, 0, 0, 54));
+        StackPane.setMargin(codePlaceholder, new Insets(0, 0, 0, 30));
 
         codeEditor.textProperty().addListener((observable, oldText, newText) -> {
             updateCodePlaceholderVisibility();
