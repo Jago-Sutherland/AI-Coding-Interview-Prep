@@ -148,6 +148,7 @@ public class CodingController implements SceneAware {
 
     private void clearQuestionAndCode() {
         questionOutput.clear();
+        questionOutput.setMouseTransparent(true);
         codeEditor.clear();
     }
     public void runEvaluation() {

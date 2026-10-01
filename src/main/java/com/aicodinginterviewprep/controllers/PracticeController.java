@@ -233,6 +233,7 @@ public class PracticeController implements SceneAware {
     
     private void clearQuestionAndAnswer(){
         questionOutput.clear();
+        questionOutput.setMouseTransparent(true);
         answerInput.clear();
         
 
