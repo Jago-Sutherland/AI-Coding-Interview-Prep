@@ -25,7 +25,7 @@
 /* ---------- Labels ---------- */
 
 .label {
-    -fx-text-fill: -color-text-grey;
+    -fx-text-fill: #332f2b;
 }
 
 .title-label {
@@ -116,7 +116,7 @@
     -fx-text-fill: #6e7681;
     -fx-padding: 0 10px 0 10px;
     -fx-font-family: "Cascadia Code", "Consolas", "Courier New", monospace;
-    -fx-text-size: 16px;
+    -fx-font-size: 16px;
 }
 
 .code-editor .code-keyword {
