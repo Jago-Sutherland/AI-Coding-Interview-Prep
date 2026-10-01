@@ -119,6 +119,7 @@ public class CodingController implements SceneAware {
 
         task.setOnSucceeded(event -> {
             questionOutput.setText(task.getValue());
+            questionOutput.setMouseTransparent(false);
             buttonGenerateQuestion.setDisable(false);
             codeEditor.setDisable(false);
             codePlaceholder.setText(PLACEHOLDER_TEXT);
